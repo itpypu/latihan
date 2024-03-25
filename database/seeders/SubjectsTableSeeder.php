@@ -9,6 +9,6 @@ class SubjectsTableSeeder extends Seeder
 {
     public function run()
     {
-        \App\Models\Subject::factory(5)->create();
+        Subject::factory(5)->create();
     }
 }

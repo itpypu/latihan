@@ -9,6 +9,6 @@ class TeachersTableSeeder extends Seeder
 {
     public function run()
     {
-        \App\Models\Teacher::factory(10)->create();
+        \App\Models\Teacher::factory(5)->create();
     }
 }

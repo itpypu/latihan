@@ -10,7 +10,7 @@ class CreateTeachersTable extends Migration
     {
         Schema::create('teachers', function (Blueprint $table) {
             $table->id('teacher_id');
-            $table->string('name');
+            $table->string('teacher_name');
             $table->unsignedBigInteger('subject_id');
             $table->foreign('subject_id')->references('subject_id')->on('subjects');
             $table->timestamps();

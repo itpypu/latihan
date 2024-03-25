@@ -9,6 +9,6 @@ class ScoresTableSeeder extends Seeder
 {
     public function run()
     {
-        \App\Models\Score::factory(50)->create();
+        Score::factory(10)->create();
     }
 }

@@ -12,7 +12,7 @@ class CreateStudentsTable extends Migration
             $table->id('student_id');
             $table->string('name');
             $table->unsignedBigInteger('schoolclass_id');
-            $table->foreign('schoolclass_id')->references('schoolclass_id')->on('schoolclasses');
+            $table->foreign('schoolclass_id')->references('schoolclass_id')->on('school_classes');
             $table->date('date_of_birth');
             $table->string('address');
             $table->timestamps();
