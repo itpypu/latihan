@@ -22,7 +22,7 @@ class SubjectFactory extends Factory
     public function definition()
     {
         return [
-            'subject_name' => $this->faker->name
+            'subject_name' => $this->faker->unique()->word()
             // Define other attributes of the Student model
         ];
     }

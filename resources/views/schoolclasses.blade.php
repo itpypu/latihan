@@ -13,8 +13,8 @@
     <h1>Daftar Kelas</h1>
 
     <ul>
-        @foreach($classes as $class)
-        <li>{{ $class->class_name }}</li>
+        @foreach($schoolclasses as $schoolclass)
+        <li>{{ $schoolclass->schoolclass_name }}</li>
         @endforeach
     </ul>
 </body>

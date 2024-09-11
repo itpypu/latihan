@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\SchoolClass;
+use App\Models\Student;
 
-class SchoolClassesController extends Controller
+class StudentsController extends Controller
 {
     public function index()
     {
-        $classes = SchoolClass::all();
-        return view('classes', compact('schoolclasses'));
+        $students = Student::all();
+        return view('students', compact('students'));
     }
 }
